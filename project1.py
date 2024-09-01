@@ -7,21 +7,24 @@
 # below 60= E grade
 
 student_name=input("enter your name: " )
-student_mark1=int(input("enter your tamil: "))
-student_mark2=int(input("enter your english: "))
-student_mark3=int(input("enter your maths: "))
-student_mark4=int(input("enter your science: "))
-student_mar5k=int(input("enter your social: "))
-total=student_mark1+student_mark2+student_mark3+student_mark4+student_mark5
-average=total/5
-print("the average mark of the student: average")
-if average<=100 and average<=90:
+student_standard=int(input("enter your standard: "))
+number_of_subjects=5
+student_mark1=int(input("enter your tamil marks : "))
+student_mark2=int(input("enter your english marks : "))
+student_mark3=int(input("enter your maths marks : "))
+student_mark4=int(input("enter your science marks : "))
+student_mark5=int(input("enter your social marks : "))
+total_marks= student_mark1+student_mark2+student_mark3+student_mark4+student_mark5
+average_marks =total_marks/number_of_subjects
+print("the average mark of the student:", average_marks)
+print("the total mark of the student:", total_marks)
+if average_marks<=100 and average_marks>=90:
     print("your grade is A")
-elif average <=89 and average <= 80:
+elif average_marks <=89 and average_marks >=80:
     print("your grade B")
-elif average<=79 and average<=70:
+elif average_marks<=79 and average_marks>=70:
     print("your grade is C")
-elif average <= 69 and average <= 60:
+elif average_marks<= 69 and average_marks >=60:
     print("your grade is D")
 else:
     print("your grade is E")
